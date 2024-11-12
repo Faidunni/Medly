@@ -21,7 +21,7 @@ import BarChart from "./BarChart";
 
 function Dashboard() {
   return (
-    <Box pt="80px" px={{ base: "4", sm: "1", md: "8", lg: "12", xl: "16" }}>
+    <main className="pt-20 lg:px-[60px] sm:px-[4px] md:px-[10px]">
       <Text as="h1" fontSize={"2xl"} px={"15px"} color={"black"}>
         Dashboard Overview
       </Text>
@@ -330,7 +330,6 @@ function Dashboard() {
           bg="white"
           p={4}
           borderRadius="lg"
-          boxShadow="md"
           border="1px"
           borderColor="blue.200"
         >
@@ -372,7 +371,7 @@ function Dashboard() {
           </VStack>
         </GridItem>
       </Grid>
-    </Box>
+    </main>
   );
 }
 
