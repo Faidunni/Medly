@@ -33,7 +33,9 @@ export default function Demo() {
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader>
-          <DrawerTitle>Drawer Title</DrawerTitle>
+          <DrawerTitle fontWeight={"bold"} fontSize={"2xl"}>
+            Medly
+          </DrawerTitle>
         </DrawerHeader>
         <DrawerBody>
           <VStack align="start" spacing={4}>

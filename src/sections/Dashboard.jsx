@@ -7,12 +7,6 @@ import {
   Grid,
   Flex,
 } from "@chakra-ui/react";
-import {
-  ProgressCircleRoot,
-  ProgressCircleRing,
-  ProgressCircleValueText,
-} from "../components/ui/progress-circle.jsx";
-
 import { FaEllipsisH } from "react-icons/fa";
 import childbirth from "../assets/images/childbirth.png";
 import { FaBell } from "react-icons/fa";
@@ -27,8 +21,8 @@ import BarChart from "./BarChart";
 
 function Dashboard() {
   return (
-    <Box pt="80px" px={{ base: "4", sm: "3", md: "8", lg: "12", xl: "16" }}>
-      <Text as="h1" fontSize={"2xl"} px={"15px"}>
+    <Box pt="80px" px={{ base: "4", sm: "1", md: "8", lg: "12", xl: "16" }}>
+      <Text as="h1" fontSize={"2xl"} px={"15px"} color={"black"}>
         Dashboard Overview
       </Text>
       <Grid
@@ -319,6 +313,9 @@ function Dashboard() {
           p={4}
           borderRadius="lg"
         >
+          <Flex justify="flex-end" gap={4}>
+            <FaEllipsisH color="#6E7191" />
+          </Flex>
           <BarChart />
         </GridItem>
 
@@ -338,50 +335,42 @@ function Dashboard() {
           borderColor="blue.200"
         >
           {/* Header with ellipsis */}
-          <Flex justify="flex-end" gap={2}>
-            <FaEllipsisH color="gray.400" />
+          <Flex justify="flex-end" gap={4}>
+            <FaEllipsisH color="#6E7191" />
           </Flex>
 
           {/* Custom Progress Circle */}
           <VStack spacing={4} align="center">
-            <ProgressCircleRoot size="120px">
-              <ProgressCircleRing
-                color="green.600"
-                trackColor="gray.400"
-                cap="round"
-                value={12}
-                strokeWidth="12px"
-              />
-              <ProgressCircleValueText>
-                <Text fontSize="xl" fontWeight="bold">
-                  12%
-                </Text>
-                <Text fontSize="sm" color="gray.500">
-                  Increment
-                </Text>
-              </ProgressCircleValueText>
-            </ProgressCircleRoot>
+            <Box
+              as="div"
+              p={"60px"}
+              borderRightWidth={10}
+              borderRightColor={"#1A4FBA"}
+              borderLeftWidth={10}
+              borderTopWidth={10}
+              borderBottomWidth={10}
+              rounded={"full"}
+              textAlign={"center"}
+            >
+              <Text fontSize="2xl" fontWeight="bold" color="#6E7191">
+                12%
+              </Text>
+              <Text fontSize="sm" color="#ABABAB">
+                Increment
+              </Text>
+            </Box>
 
             {/* Content below the progress circle */}
             <VStack spacing={1}>
-              <Text fontSize="lg" fontWeight="bold">
+              <Text fontSize="xl" fontWeight="bold" color="#6E7191">
                 Hours of sleep
               </Text>
-              <Text fontSize="sm" color="gray.500">
+              <Text fontSize="sm" color="#ABABAB">
                 3:30 mins yesterday
               </Text>
             </VStack>
           </VStack>
         </GridItem>
-
-        {/* <GridItem
-          colSpan={{ base: 6, sm: 2 }}
-          bg="gray.200"
-          p={4}
-          borderRadius="lg"
-        >
-          Water Taken
-        </GridItem> */}
       </Grid>
     </Box>
   );

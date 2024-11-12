@@ -1,4 +1,6 @@
 import { Bar } from "react-chartjs-2";
+import { FaEllipsisH } from "react-icons/fa";
+import { Flex } from "@chakra-ui/react";
 import {
   Chart as ChartJS,
   BarElement,
@@ -24,7 +26,7 @@ const BarChart = () => {
     ],
     datasets: [
       {
-        label: "Fitness Activity",
+        label: "Steps taken",
         data: [202, 105, 210, 95, 70, 100, 215],
         backgroundColor: "#1A4FBA",
         borderColor: "#1A4FBA",

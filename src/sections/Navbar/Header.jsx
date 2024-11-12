@@ -34,7 +34,7 @@ function Header() {
     <Box
       as="header"
       py="10px"
-      px={{ base: "4", sm: "3", md: "8", lg: "12", xl: "16" }}
+      px={{ base: "4", sm: "1", md: "8", lg: "12", xl: "16" }}
       position="fixed"
       top="0"
       left="0"
