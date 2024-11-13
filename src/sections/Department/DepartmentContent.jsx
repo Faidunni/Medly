@@ -18,7 +18,13 @@ function DepartmentContent() {
         there is the latest update for the last 7 days, check now
       </Text>
       <Flex gap={5} mt={6} direction={{ base: "column", md: "row" }}>
-        <Box as="div" bg={"white"} p={5} borderRadius={"lg"}>
+        <Box
+          as="div"
+          bg={"white"}
+          p={5}
+          borderRadius={"lg"}
+          w={{ base: "40%", md: "100%", sm: "100%" }}
+        >
           <Flex alignItems={"center"} gap={2}>
             <Box as="div" bg={"white"} p={2} borderRadius={"lg"} shadow={"md"}>
               <IoHome style={{ color: "#1A4FBA" }} />
@@ -29,7 +35,14 @@ function DepartmentContent() {
           </Flex>
           <DoughnutChart />
         </Box>
-        <Box as="div" bg={"white"} px={5} py={5} borderRadius={"lg"} w={"100%"}>
+        <Box
+          as="div"
+          bg={"white"}
+          px={5}
+          py={5}
+          borderRadius={"lg"}
+          w={{ base: "60%", md: "100%", sm: "100%" }}
+        >
           <Flex alignItems={"center"} gap={2} pb={5}>
             <Box as="div" bg={"white"} p={2} borderRadius={"lg"} shadow={"md"}>
               <FaHospitalUser style={{ color: "#1A4FBA" }} />
