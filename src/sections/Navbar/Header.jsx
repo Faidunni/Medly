@@ -23,9 +23,9 @@ function Header() {
   }, []);
 
   const navLinks = [
-    { name: "Dashboard", href: "#" },
+    { name: "Dashboard", href: "/mainpage" },
+    { name: "Department", href: "/department" },
     { name: "Patients", href: "#" },
-    { name: "Department", href: "#" },
   ];
 
   const logoWidth = useBreakpointValue({ base: "40px", md: "50px" });

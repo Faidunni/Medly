@@ -18,9 +18,9 @@ export default function Demo() {
   const displayHamburger = useBreakpointValue({ base: "block", md: "none" });
 
   const navLinks = [
-    { name: "Dashboard", href: "#" },
+    { name: "Dashboard", href: "/mainpage" },
+    { name: "Department", href: "/department" },
     { name: "Patients", href: "#" },
-    { name: "Department", href: "#" },
   ];
 
   return (
@@ -38,16 +38,17 @@ export default function Demo() {
           </DrawerTitle>
         </DrawerHeader>
         <DrawerBody>
-          <VStack align="start" spacing={4}>
+          <VStack align="start" spacing={4} listStyleType="none">
             {navLinks.map((link) => (
               <Box
+                as="li"
                 key={link.name}
-                p={2}
                 _hover={{
                   bg: "blue.800",
                   color: "white",
                   fontWeight: "semibold",
                 }}
+                p={2}
                 borderRadius="md"
               >
                 <a href={link.href}>{link.name}</a>
