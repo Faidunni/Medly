@@ -1,6 +1,4 @@
 import { Bar } from "react-chartjs-2";
-import { FaEllipsisH } from "react-icons/fa";
-import { Flex } from "@chakra-ui/react";
 import {
   Chart as ChartJS,
   BarElement,

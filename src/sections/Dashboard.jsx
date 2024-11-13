@@ -176,7 +176,7 @@ function Dashboard() {
               Upcoming
             </Text>
             <Box display={"flex"} gap={4} alignItems="center" mt={4}>
-              <Box bg="#71DDB1" as="div" p={4} rounded={"full"} mt={4}>
+              <Box bg="#1A4FBA" as="div" p={4} rounded={"full"} mt={4}>
                 <FaBell color="white" size="1em" />
               </Box>
               <Box alignItems="center" justifyContent="center">
@@ -188,6 +188,38 @@ function Dashboard() {
                 </Text>
                 <Text as="p" color={"#9E9E9E"} fontWeight={"300"}>
                   09:20AM - 11:30
+                </Text>
+              </Box>
+            </Box>
+            <Box display={"flex"} gap={4} alignItems="center" mt={4}>
+              <Box bg="#71DDB1" as="div" p={4} rounded={"full"} mt={4}>
+                <FaBell color="white" size="1em" />
+              </Box>
+              <Box alignItems="center" justifyContent="center">
+                <Text as="p" color={"#858585"} fontWeight={"500"}>
+                  Therapy appointment
+                </Text>
+                <Text as="p" color={"#858585"} fontWeight={"500"}>
+                  Mr John Doe
+                </Text>
+                <Text as="p" color={"#9E9E9E"} fontWeight={"300"}>
+                  03:20PM - 05:30
+                </Text>
+              </Box>
+            </Box>
+            <Box display={"flex"} gap={4} alignItems="center" mt={4}>
+              <Box bg="#3FBDF1" as="div" p={4} rounded={"full"} mt={4}>
+                <FaBell color="white" size="1em" />
+              </Box>
+              <Box alignItems="center" justifyContent="center">
+                <Text as="p" color={"#858585"} fontWeight={"500"}>
+                  Dentist appointment
+                </Text>
+                <Text as="p" color={"#858585"} fontWeight={"500"}>
+                  Dr Jane Doe
+                </Text>
+                <Text as="p" color={"#9E9E9E"} fontWeight={"300"}>
+                  10:20AM - 12:30
                 </Text>
               </Box>
             </Box>

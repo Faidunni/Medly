@@ -25,7 +25,7 @@ const BarChart = () => {
     ],
     datasets: [
       {
-        label: "Steps taken",
+        label: "Employees",
         data: [50, 450, 100, 250, 75, 450],
         backgroundColor: [
           "#ADD8E6",
@@ -58,10 +58,15 @@ const BarChart = () => {
         beginAtZero: true,
       },
     },
+    plugins: {
+      legend: {
+        position: "bottom",
+      },
+    },
   };
 
   return (
-    <div style={{ height: "300px" }}>
+    <div style={{ height: "400px" }}>
       <Bar data={data} options={options} />
     </div>
   );
