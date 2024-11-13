@@ -1,13 +1,15 @@
-import { Box, Container } from "@chakra-ui/react";
-import Dashboard from "./sections/Dashboard";
-import Header from "./sections/Navbar/Header";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import MainPage from "./pages/MainPage";
 
 function App() {
   return (
-    <Box bg="#f1f5f9" overflow={"none"}>
-      <Header />
-      <Dashboard className={"mb - 4"} />
-    </Box>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/mainpage" element={<MainPage />} />
+      </Routes>
+    </Router>
   );
 }
 
