@@ -38,7 +38,7 @@ function HomePage() {
       <Link to="/mainpage">
         <Button
           bg="#1A4FBA"
-          px={"10%"}
+          px={20}
           py={6}
           mt={6}
           fontWeight={"semibold"}
